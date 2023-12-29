@@ -8,11 +8,8 @@ import "./Components/Home.css"
 import { BrowserRouter } from 'react-router-dom';
 
 
-ReactDOM.render(
-  <App />,
-  document.getElementById('root')
-);
-
+const root = ReactDOM.createHashRouter(document.getElementById('root'));
+root.render(<BrowserRouter>  < App /> </BrowserRouter >);
 
 
 
